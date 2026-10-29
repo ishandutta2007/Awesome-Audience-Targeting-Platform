@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Audience-Targeting-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Audience-Targeting-Platform?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Audience-Targeting-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Audience-Targeting-Platform?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Audience-Targeting-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Audience-Targeting-Platform?style=social" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Audience-Targeting-Platform/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Audience-Targeting-Platform?style=flat-square&color=blue" alt="Open Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Audience-Targeting-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Audience-Targeting-Platform?style=flat-square&color=success" alt="License"/></a>
@@ -82,7 +82,7 @@ The global audience targeting and customer data platform (CDP) market is estimat
 
 > *Repositories are sorted in descending order by GitHub stargazers count.*
 
-| 📦 Project | ⭐ Stars | 🎯 Primary Purpose | 🛠️ Tech Stack | 📜 License | 💡 Key Capabilities & Architecture |
+| 📦 Project | ⭐ GitHub_Stars | 🎯 Primary Purpose | 🛠️ Tech Stack | 📜 License | 💡 Key Capabilities & Architecture |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[PostHog](https://github.com/PostHog/posthog)** | [![Stars](https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white)](https://github.com/PostHog/posthog/stargazers) | Product OS & CDP / Cohort Targeting | Python, TypeScript, ClickHouse, Kafka | MIT | Dynamic behavioral cohort builder, event ingestion, real-time feature flags, session replay, and warehouse syncs. Self-hosted or Cloud. |
 | **[Mautic](https://github.com/mautic/mautic)** | [![Stars](https://img.shields.io/github/stars/mautic/mautic?style=social&color=white)](https://github.com/mautic/mautic/stargazers) | Marketing Automation & Audience Segmentation | PHP, Symfony, MySQL | GPL-3.0 | Comprehensive contact management, lead scoring, dynamic audience segments, rule-based campaign journeys, and multi-channel owned messaging. |
@@ -123,7 +123,7 @@ Contributions make open-source amazing! 🌟
 3. 📝 **Add/edit entries in `README.md`**:
    - Follow the established table schemas.
    - For SaaS: include specific starting tier price, verified free tier limits, and company scale/valuation.
-   - For Open-Source: add the star badge `[![Stars](https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white)](https://github.com/<owner>/<repo>/stargazers)` and maintain descending star count order.
+   - For Open-Source: add the Stars_Badge `[![Stars](https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white)](https://github.com/<owner>/<repo>/stargazers)` and maintain descending Stars_Count order.
 4. 🚀 **Submit a Pull Request** with a concise summary of the addition or update.
 
 ---
