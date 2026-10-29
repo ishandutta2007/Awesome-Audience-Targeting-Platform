@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070a14"/>
+    </linearGradient>
+
+    <linearGradient id="accent-cyan-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.6"/>
+    </pattern>
+
+    <!-- Radial blur glows -->
+    <radialGradient id="radial-glow-1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a0f1d" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="radial-glow-2" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a0f1d" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .radar-sweep {
+        transform-origin: 1050px 210px;
+        animation: rotateRadar 10s linear infinite;
+      }
+      .pulse-ring-1 {
+        transform-origin: 1050px 210px;
+        animation: pulseRing 4s ease-out infinite;
+      }
+      .pulse-ring-2 {
+        transform-origin: 1050px 210px;
+        animation: pulseRing 4s ease-out 2s infinite;
+      }
+      .floating-particle-1 {
+        animation: floatOrb 6s ease-in-out infinite alternate;
+      }
+      .floating-particle-2 {
+        animation: floatOrb 8s ease-in-out 1s infinite alternate-reverse;
+      }
+      .floating-particle-3 {
+        animation: floatOrb 7s ease-in-out 2s infinite alternate;
+      }
+      .pill-float {
+        animation: floatPill 5s ease-in-out infinite alternate;
+      }
+      .pill-float-2 {
+        animation: floatPill 5s ease-in-out 2.5s infinite alternate-reverse;
+      }
+      @keyframes rotateRadar {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulseRing {
+        0% { r: 30; opacity: 0.8; }
+        100% { r: 160; opacity: 0; }
+      }
+      @keyframes floatOrb {
+        0% { transform: translateY(0px) scale(1); }
+        100% { transform: translateY(-15px) scale(1.08); }
+      }
+      @keyframes floatPill {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+      .banner-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        letter-spacing: -0.5px;
+      }
+      .banner-subtitle {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        fill: #94a3b8;
+      }
+      .pill-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Ambient Ambient Glows -->
+  <rect width="1200" height="420" rx="16" fill="url(#radial-glow-1)"/>
+  <rect width="1200" height="420" rx="16" fill="url(#radial-glow-2)"/>
+
+  <!-- Grid Layer -->
+  <rect width="1200" height="420" rx="16" fill="url(#grid)"/>
+
+  <!-- Border Outline -->
+  <rect width="1198" height="418" x="1" y="1" rx="15" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.8"/>
+
+  <!-- Animated Radar Target in Background (Right side) -->
+  <g opacity="0.65">
+    <circle cx="1050" cy="210" r="160" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="1050" cy="210" r="120" fill="none" stroke="#334155" stroke-width="1"/>
+    <circle cx="1050" cy="210" r="80" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+    <circle cx="1050" cy="210" r="40" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <circle cx="1050" cy="210" r="8" fill="#38bdf8"/>
+
+    <!-- Pulse rings -->
+    <circle class="pulse-ring-1" cx="1050" cy="210" r="40" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle class="pulse-ring-2" cx="1050" cy="210" r="40" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+
+    <!-- Crosshairs -->
+    <line x1="880" y1="210" x2="1220" y2="210" stroke="#334155" stroke-width="1" stroke-dasharray="2,4"/>
+    <line x1="1050" y1="40" x2="1050" y2="380" stroke="#334155" stroke-width="1" stroke-dasharray="2,4"/>
+
+    <!-- Rotating Radar Sweep -->
+    <g class="radar-sweep">
+      <path d="M 1050 210 L 1210 210 A 160 160 0 0 1 1163 323 Z" fill="url(#glow-grad)" opacity="0.6"/>
+    </g>
+
+    <!-- Target Dots in Radar -->
+    <circle cx="1110" cy="150" r="4" fill="#38bdf8" class="floating-particle-1"/>
+    <circle cx="980" cy="180" r="3.5" fill="#a855f7" class="floating-particle-2"/>
+    <circle cx="1080" cy="280" r="5" fill="#ec4899" class="floating-particle-3"/>
+    <circle cx="1010" cy="260" r="3" fill="#22c55e" class="floating-particle-1"/>
+  </g>
+
+  <!-- Foreground Content (Left & Center) -->
+  <!-- Category Tag Badge -->
+  <g transform="translate(60, 55)">
+    <rect width="260" height="32" rx="16" fill="#1e293b" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="16" cy="16" r="4" fill="#38bdf8"/>
+    <text x="30" y="21" class="pill-text" fill="#38bdf8">🎯 CURATED MARTECH &amp; ADTECH</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="145" class="banner-title" fill="#ffffff">Awesome Audience Targeting</text>
+  <text x="60" y="195" class="banner-title" fill="url(#accent-cyan-blue)">Platform Stack ⚡</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="240" class="banner-subtitle">
+    The ultimate index of SaaS platforms &amp; open-source engines for customer segmentation,
+  </text>
+  <text x="60" y="268" class="banner-subtitle">
+    first-party data activation, identity resolution, CDPs, and privacy-first targeting.
+  </text>
+
+  <!-- Feature Pills in Bottom Foreground -->
+  <g transform="translate(60, 315)" class="pill-float">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="42" rx="21" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+      <circle cx="22" cy="21" r="5" fill="#38bdf8"/>
+      <text x="36" y="26" class="pill-text">Customer 360 &amp; CDPs</text>
+    </g>
+
+    <!-- Pill 2 -->
+    <g transform="translate(195, 0)">
+      <rect width="210" height="42" rx="21" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+      <circle cx="22" cy="21" r="5" fill="#6366f1"/>
+      <text x="36" y="26" class="pill-text">Real-Time Segmentation</text>
+    </g>
+
+    <!-- Pill 3 -->
+    <g transform="translate(420, 0)">
+      <rect width="190" height="42" rx="21" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+      <circle cx="22" cy="21" r="5" fill="#a855f7"/>
+      <text x="36" y="26" class="pill-text">Identity &amp; Clean Rooms</text>
+    </g>
+
+    <!-- Pill 4 -->
+    <g transform="translate(625, 0)">
+      <rect width="185" height="42" rx="21" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+      <circle cx="22" cy="21" r="5" fill="#10b981"/>
+      <text x="36" y="26" class="pill-text">Reverse ETL Pipelines</text>
+    </g>
+  </g>
+</svg>
